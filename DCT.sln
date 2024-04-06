@@ -5,13 +5,19 @@ VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DCT", "DCT\DCT.csproj", "{BEC5B374-8D13-4764-B39D-396553CA47CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{371C6477-131F-47AF-8B39-281ECCAA9A0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{371C6477-131F-47AF-8B39-281ECCAA9A0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{FEE154CB-B56A-4B7A-B4F4-F403828A2412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{FEE154CB-B56A-4B7A-B4F4-F403828A2412}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integrations", "Integrations", "{4D09BA8B-C080-423C-9D80-F9C78A57ACDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNewsIntegration", "HackerNewsIntegration\HackerNewsIntegration.csproj", "{AB103259-E094-4AB2-91F7-760AC11A0741}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNewsIntegration", "HackerNewsIntegration\HackerNewsIntegration.csproj", "{AB103259-E094-4AB2-91F7-760AC11A0741}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{6073BBDC-6A91-4790-9F6F-A642BBD47B4E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClientHelper", "HttpClientHelper\HttpClientHelper.csproj", "{FD0DCD6C-16AE-419F-BFB4-BBDFF6D98389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCT-Tests", "DCT-Tests\DCT-Tests.csproj", "{56D5E1AA-BF67-4CD2-9B18-273F6A02BFD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,12 +41,21 @@ Global
 		{AB103259-E094-4AB2-91F7-760AC11A0741}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB103259-E094-4AB2-91F7-760AC11A0741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB103259-E094-4AB2-91F7-760AC11A0741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD0DCD6C-16AE-419F-BFB4-BBDFF6D98389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD0DCD6C-16AE-419F-BFB4-BBDFF6D98389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD0DCD6C-16AE-419F-BFB4-BBDFF6D98389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD0DCD6C-16AE-419F-BFB4-BBDFF6D98389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D5E1AA-BF67-4CD2-9B18-273F6A02BFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D5E1AA-BF67-4CD2-9B18-273F6A02BFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D5E1AA-BF67-4CD2-9B18-273F6A02BFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D5E1AA-BF67-4CD2-9B18-273F6A02BFD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AB103259-E094-4AB2-91F7-760AC11A0741} = {4D09BA8B-C080-423C-9D80-F9C78A57ACDA}
+		{FD0DCD6C-16AE-419F-BFB4-BBDFF6D98389} = {6073BBDC-6A91-4790-9F6F-A642BBD47B4E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0329F9E-48DF-4C5A-8F9F-A006BDBB440C}
