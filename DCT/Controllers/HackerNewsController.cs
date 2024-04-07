@@ -1,7 +1,8 @@
 ﻿using BLL.Interfaces;
-using Core.Models;
 using DCT.Extensions;
+using DCT.ResponseModels;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace DCT.Controllers
 {
@@ -19,7 +20,12 @@ namespace DCT.Controllers
         }
 
         [HttpGet("best-stories/{count}")]
-        public async Task<ActionResult<IEnumerable<HackerNewsStory>>> GetBestStories(int count)
+        [ProducesResponseType(typeof(IEnumerable<HackerNewsBestStoryResponse>), 200)]
+        [SwaggerOperation(
+            Summary = "Get the best `N` Hacker News stories",
+            Description = "Retrieves a list of best Hacker News stories.",
+            OperationId = "GetBestStories")]
+        public async Task<ActionResult<IEnumerable<HackerNewsBestStoryResponse>>> GetBestStories(int count)
         {
             try
             {
